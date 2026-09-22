@@ -1,0 +1,102 @@
+/* CSS Rule: selector + declaration block */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f3d5a;
+    color: white;
+    padding: 20px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Descendant combinator */
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Descendant combinator */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+h1, h2, h3 {
+    color: #1f3d5a;
+}
+
+#hero {
+    background-color: #eaf4ff;
+}
+
+/* Child combinator */
+.services-container > .service {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+input, select, textarea, button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: #1f3d5a;
+    color: white;
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Adjacent sibling combinator */
+section h2 + p {
+    color: #666;
+}
+
+/* General sibling combinator */
+section h2 ~ p {
+    font-style: italic;
+}
