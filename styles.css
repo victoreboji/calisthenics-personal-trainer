@@ -50,9 +50,24 @@ h1, h2, h3 {
 
 /* Child combinator */
 .services-container > .service {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+    background-color: #f8fbff;
+    border-left: 4px solid #1f3d5a;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(31, 61, 90, 0.1);
+}
+
+/* Adjacent sibling combinator */
+.service h3 + p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Adjacent sibling combinator */
+.service + .service {
+    margin-top: 16px;
 }
 
 form {
