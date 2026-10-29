@@ -120,6 +120,10 @@ figcaption {
     margin-top: 1rem;
 }
 
+.table-scroll {
+  overflow-x: auto;
+}
+
 form {
     margin-top: 1.25rem;
     padding: 1rem;

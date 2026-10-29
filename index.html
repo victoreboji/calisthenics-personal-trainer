@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Calisthenics - Personal Trainer | Build Strength & Fitness</title>
-    <meta name="description" content="Professional calisthenics personal trainer specializing in bodyweight training, strength building and fitness coaching.">
+    <meta name="description"
+        content="Professional calisthenics personal trainer specializing in bodyweight training, strength building and fitness coaching.">
     <meta name="keywords" content="calisthenics trainer, personal trainer, bodyweight training, fitness coaching">
     <meta name="author" content="Pablo Boji">
     <!-- Open Graph tags for social sharing -->
@@ -14,6 +16,7 @@
     <meta property="og:url" content="https://elitecalisthenics.com">
     <link rel="stylesheet" href="styles.css?v=3">
 </head>
+
 <body id="top">
     <header>
         <nav aria-label="Primary navigation">
@@ -39,7 +42,8 @@
 
         <section id="about">
             <h2>About Your Trainer</h2>
-            <p>Welcome to <strong>Elite Calisthenics</strong>! I am a certified personal trainer specializing in calisthenics and bodyweight training.</p>
+            <p>Welcome to <strong>Elite Calisthenics</strong>! I am a certified personal trainer specializing in
+                calisthenics and bodyweight training.</p>
             <p>With <em>10+ years of experience</em>, I help clients achieve their fitness goals through:</p>
             <ul>
                 <li>Personalized training programs</li>
@@ -52,30 +56,81 @@
         <section id="services">
             <h2>Training Services</h2>
             <div class="services-container">
-                <article class="service"><h3>One-on-One Sessions</h3><p>Personalized training tailored to your fitness level and goals.</p></article>
-                <article class="service"><h3>Group Classes</h3><p>High-energy group workouts for motivation and community support.</p></article>
-                <article class="service"><h3>Online Coaching</h3><p>Remote training programs with video guidance and progress tracking.</p></article>
+                <article class="service">
+                    <h3>One-on-One Sessions</h3>
+                    <p>Personalized training tailored to your fitness level and goals.</p>
+                </article>
+                <article class="service">
+                    <h3>Group Classes</h3>
+                    <p>High-energy group workouts for motivation and community support.</p>
+                </article>
+                <article class="service">
+                    <h3>Online Coaching</h3>
+                    <p>Remote training programs with video guidance and progress tracking.</p>
+                </article>
             </div>
         </section>
 
         <section id="schedule">
             <h2>Training Schedule &amp; Booking</h2>
             <p>Select your preferred time slot for training sessions:</p>
-            <table>
-                <caption>Weekly training availability</caption>
-                <thead>
-                    <tr><th scope="col">Day</th><th scope="col">Morning</th><th scope="col">Afternoon</th><th scope="col">Evening</th></tr>
-                </thead>
-                <tbody>
-                    <tr><th scope="row">Monday</th><td>Available</td><td>Available</td><td>Booked</td></tr>
-                    <tr><th scope="row">Tuesday</th><td>Available</td><td>Booked</td><td>Available</td></tr>
-                    <tr><th scope="row">Wednesday</th><td>Booked</td><td>Available</td><td>Available</td></tr>
-                    <tr><th scope="row">Thursday</th><td>Available</td><td>Available</td><td>Available</td></tr>
-                    <tr><th scope="row">Friday</th><td>Available</td><td>Available</td><td>Booked</td></tr>
-                    <tr><th scope="row">Saturday</th><td>Available</td><td>Available</td><td>Available</td></tr>
-                    <tr><th scope="row">Sunday</th><td>Off</td><td>Off</td><td>Off</td></tr>
-                </tbody>
-            </table>
+            <div class="table-scroll">
+                <table>
+                    <caption>Weekly training availability</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Morning</th>
+                            <th scope="col">Afternoon</th>
+                            <th scope="col">Evening</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Monday</th>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Booked</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tuesday</th>
+                            <td>Available</td>
+                            <td>Booked</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wednesday</th>
+                            <td>Booked</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Thursday</th>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Friday</th>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Booked</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturday</th>
+                            <td>Available</td>
+                            <td>Available</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sunday</th>
+                            <td>Off</td>
+                            <td>Off</td>
+                            <td>Off</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <form id="booking-form">
                 <h3>Book Your Session</h3>
@@ -95,13 +150,19 @@
                 <label for="preferred-day">Preferred Day:</label>
                 <select id="preferred-day" name="preferred-day" required>
                     <option value="">-- Select a day --</option>
-                    <option value="monday">Monday</option><option value="tuesday">Tuesday</option><option value="wednesday">Wednesday</option>
-                    <option value="thursday">Thursday</option><option value="friday">Friday</option><option value="saturday">Saturday</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
                 </select>
                 <label for="preferred-time">Preferred Time:</label>
                 <select id="preferred-time" name="preferred-time" required>
                     <option value="">-- Select a time --</option>
-                    <option value="morning">Morning</option><option value="afternoon">Afternoon</option><option value="evening">Evening</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
                 </select>
                 <button type="submit">Book Session</button>
             </form>
@@ -120,13 +181,18 @@
                 </fieldset>
                 <fieldset>
                     <legend>Which aspects did you find helpful?</legend>
-                    <label><input type="checkbox" name="helpful-aspects" value="form-feedback"> Form &amp; Feedback</label>
-                    <label><input type="checkbox" name="helpful-aspects" value="exercise-variety"> Exercise Variety</label>
-                    <label><input type="checkbox" name="helpful-aspects" value="progress-tracking"> Progress Tracking</label>
-                    <label><input type="checkbox" name="helpful-aspects" value="motivation"> Motivation &amp; Support</label>
+                    <label><input type="checkbox" name="helpful-aspects" value="form-feedback"> Form &amp;
+                        Feedback</label>
+                    <label><input type="checkbox" name="helpful-aspects" value="exercise-variety"> Exercise
+                        Variety</label>
+                    <label><input type="checkbox" name="helpful-aspects" value="progress-tracking"> Progress
+                        Tracking</label>
+                    <label><input type="checkbox" name="helpful-aspects" value="motivation"> Motivation &amp;
+                        Support</label>
                 </fieldset>
                 <label for="improvements">What can I improve?</label>
-                <textarea id="improvements" name="improvements" rows="5" cols="40" maxlength="500" placeholder="Share your suggestions"></textarea>
+                <textarea id="improvements" name="improvements" rows="5" cols="40" maxlength="500"
+                    placeholder="Share your suggestions"></textarea>
                 <label for="email-feedback">Your Email (optional):</label>
                 <input type="email" id="email-feedback" name="email-feedback" autocomplete="email" maxlength="100">
                 <button type="submit">Submit Feedback</button>
@@ -137,9 +203,12 @@
 
     <footer>
         <h3>Elite Calisthenics</h3>
-        <address>Location: Downtown Fitness Center<br>Email: <a href="mailto:trainer@elitecalisthenics.com">trainer@elitecalisthenics.com</a><br>Phone: <a href="tel:+1234567890">(123) 456-7890</a></address>
+        <address>Location: Downtown Fitness Center<br>Email: <a
+                href="mailto:trainer@elitecalisthenics.com">trainer@elitecalisthenics.com</a><br>Phone: <a
+                href="tel:+1234567890">(123) 456-7890</a></address>
         <p>&copy; 2026 Elite Calisthenics. All rights reserved. | <a href="#top">Back to Top</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
